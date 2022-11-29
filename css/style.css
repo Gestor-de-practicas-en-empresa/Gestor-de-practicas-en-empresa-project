@@ -17,7 +17,7 @@ body{
 
 #data_table {
     margin: auto;
-    background-color: white;
+    background-color: lightgray;
     border-collapse: collapse !important;
     border-radius: 20px;
     border-style: hidden; 
@@ -43,7 +43,7 @@ body{
   
   
   table tr:nth-child(2n+1){
-    background-color: lightgray;
+    background-color: white;
 }
 
   #wrapper{
