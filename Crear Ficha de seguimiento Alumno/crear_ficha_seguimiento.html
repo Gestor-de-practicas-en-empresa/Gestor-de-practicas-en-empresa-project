@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_crearFichaSeguimiento.css">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+                <h1>Crear Ficha de Seguimiento</h1>
+  <div id="caja">   
+    <form action="#" class="form">
+        <div class="form-group">
+          <label for="name">Fecha *</label>
+          <input type="text" class="form-input" id="fecha" placeholder="DD/MM/AAAA" minlength="10" required aria-label="Utiliza el formato DD/MM/AAAA" title="Formato DD/MM/AAAA" pattern="^(0?[1-9]|[12]\d|3[01])[\/](0?[1-9]|1[0-2])[\/](19|20)\d{2}$">
+        </div>
+        <div class="form-group">
+          <label for="tipoPracticas">Tipo de Prácticas *</label>
+          <input type="text" class="form-input" id="tipoPracticas" placeholder="Dual o FCT" pattern="[A-Za-z]+"  required >
+        </div>
+        <div class="form-group">
+            <label for="horasRealizadas">Horas realizadas *</label>
+            <input type="number" class="form-input" id="horasRealizadas" placeholder="Número de horas realizadas" min="0" max="10" required>
+          </div>
+        <div class="form-group">
+          <label for="Actividad">Actividad Realizada *</label>
+          <input type="text" class="form-input" id="Actividad" placeholder="Actividad Realizada" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Observaciones *</label>
+          <textarea class="form-input form-input--textarea" id="comment" rows="3" placeholder="Deja tu comentario" required></textarea>
+        </div>
+        <div class="form-group form-group--submit">
+          <button class="form-button" type="submit">Enviar</button>
+        </div>
+      </form>
+</body>
+</html>
