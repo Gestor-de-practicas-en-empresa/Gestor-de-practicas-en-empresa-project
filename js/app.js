@@ -99,12 +99,12 @@
 
     //Event Listeners
     form.addEventListener('submit',function(e) {
-        e.preventDefault();
+        //e.preventDefault();
         checkRequired([email, password]);
         checkLength(password,6,25);
         checkEmail(email);
         checkPasswordMatch(password);
-        window.open('../indexalumno.html');
+        window.open('../listadoprofesor.html');
     });
 
 //Validación del formulario alumnos
@@ -171,7 +171,7 @@
         checkLength1(password1,6,25);
         checkEmail1(email1);
         checkPasswordMatch1(password1);
-        window.location.href = "./index.alumno.html";
+        window.open('../indexalumno.html');
     };
 
 /*Login*/
