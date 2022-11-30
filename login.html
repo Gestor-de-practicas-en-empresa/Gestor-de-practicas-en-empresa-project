@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>¿Quién eres?</title>
+</head>
+<style>
+  * {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+  }
+  h1{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+  }
+</style>
+<body>
+<br>
+<br>
+<h1>¡Bienvenido de nuevo!</h1>
+<br>
+<div class="cont_centrar">
+  <div class="cont_login">
+    <!-- Sin interacción -->
+    <div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+        <div class="cont_ba_opcitiy">
+        <h2>Profesor</h2>  
+        <p>¿Eres un profesor?</p> 
+        <button class="btn_login" onclick="cambiar_login()">INICIAR SESIÓN</button>
+        </div>
+        </div>
+       <div class="col_md_sign_up">
+        <div class="cont_ba_opcitiy">
+        <h2>Alumno</h2>    
+        <p>¿Eres un alumno?</p>
+        <button class="btn_login" onclick="cambiar_sign_up()">INICIAR SESIÓN</button>
+        </div>
+       </div>
+    </div>
+    <!-- Sin interacción -->
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+      
+       </div>
+    </div>
+    <div class="cont_forms" >
+    <div class="cont_img_back_">
+    </div>
+    <!-- Fondo de los contenedores -->
+
+    <!-- Profes --> 
+   <div class="cont_form_login">
+    <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">⇦</i></a>
+    <h2>Iniciar sesión</h2>
+    <form id="form" class="form" action="listadoprofesor.html">
+        <div class="form-control">
+            <input type="text" id="email" placeholder="Correo">
+            <br>
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password" placeholder="Contraseña">
+            <br>
+            <br>
+            <small style="text-align:left;">Error Message</small>
+        </div>
+        <button class="btn_login">Acceder</button>
+    </form>
+  </div>
+   <!-- Profes -->
+  
+  <!-- Alumnos -->
+  <div class="cont_form_sign_up">
+    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">⇦</i></a> 
+    <br>
+    <br>
+    <h2>Iniciar sesión</h2>
+    <form id="form1" class="form" action="indexalumno.html">
+      <div class="form-control">
+          <input type="text" id="email1" placeholder="Correo">
+          <br>
+          <small>Error Message</small>
+      </div>
+      <div class="form-control">
+          <input type="password" id="password1" placeholder="Contraseña">
+          <br>
+          <br>
+          <small style="text-align:left;">Error Message</small>
+      </div>
+      <button class="btn_login" onclick="validar()">Acceder</button>
+  </form>
+  </div>
+  <!-- Alumnos -->
+
+  </div>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

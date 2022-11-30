@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/alumno.css">
+    <title>Añadir alumno | Profesor</title>
+</head>
+<style>
+    h1{
+    margin-left:2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2em;
+    }
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+</style>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-chalkboard'></i>
+            <span class="logo_name"> Área Profesores</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="listadoprofesor.html" class="active">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Alumnos</span>
+                </a>
+            </li>
+            <li>
+                <a href="verempresa.html">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Empresas</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Cerrar sesión</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Alumnos asignados</span>
+            </div>
+            <div class="profile-details">
+                <span class="admin_name">¡ HOLA nombre del profesor !</span>
+            </div>
+        </nav>
+
+        <div class="home-content">        
+            <div id="wrapper">
+                <h1>Añadir alumno</h1>
+                <div class="contenedor">
+                    <div class="div-formulario">
+                        <h2>Formulario</h2>
+                
+                        <form action="#" id="formulario">
+                            <input type="text" id="nombre" placeholder="datos del alumno">
+                            <input type="text" id="apellido" placeholder="apellidos del alumno">
+                            <input type="number" id="dni" placeholder="dni del alumno">
+                            <button type="submit" id="btnAgregar">Agregar alumno</button>
+                        </form>
+                    </div>
+                    <div class="div-listado">
+                        <h2>Listado Alumnos</h2>
+                        <div class="div-alumnos">
+                
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

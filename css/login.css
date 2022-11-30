@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+/*CSS LOGIN*/
+  .cotn_principal {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+  }
+  .cont_centrar {
+    display: flex;
+    align-self: center;
+    width: 100%;
+  }
+  
+  .cont_login {
+    position: relative;
+    width: 640px;
+  }
+  
+  .cont_back_info {
+    position: relative;
+    float: left;
+    width: 640px;
+    height: 280px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cont_forms {
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    height: 280px;
+    background-color: #740d86;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cont_forms_active_login {
+    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+    height: 420px;
+    top: -60px;
+    left: 0px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cont_forms_active_sign_up {
+    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+    height: 420px;
+    top: -60px;
+    left: 320px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  
+  .cont_forms_active_login > .cont_img_back_ {
+    top: -20px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cont_forms_active_sign_up > .cont_img_back_ {
+    top: -20px;
+    left: -435px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cont_info_log_sign_up {
+    position: absolute;
+    width: 640px;
+    height: 280px;
+    top: 0px;
+    z-index: 1;
+  }
+  
+  .col_md_login {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  
+  .col_md_login > h2 {
+    font-weight: 400;
+    margin-top: 70px;
+    color: white;
+  }
+  
+  .col_md_login > p {
+    font-weight: 400;
+    margin-top: 15px;
+    width: 80%;
+    color: white;
+  }
+  
+  .btn_login {
+    background-color: #c96dcb;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .col_md_sign_up {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  
+  .cont_ba_opcitiy > h2 {
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .cont_ba_opcitiy > p {
+    font-weight: 400;
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  /* ----------------------------------
+    texto de fondo    
+  ------------------------------------
+   */
+  .cont_ba_opcitiy {
+    position: relative;
+    background-color: rgba(3, 10, 13, 0.55);
+    width: 80%;
+    border-radius: 3px;
+    margin-top: 60px;
+    padding: 15px 0px;
+  }
+  
+  .btn_sign_up {
+    background-color: #ef5350;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .cont_forms_active_sign_up {
+    z-index: 2;
+  }
+  
+  .cont_form_login {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    width: 320px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cont_forms_active_login {
+    z-index: 2;
+  }
+  
+  .cont_form_sign_up {
+    position: absolute;
+    width: 320px;
+    float: left;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .cont_form_sign_up > input {
+    text-align: left;
+    padding: 15px 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 260px;
+    border: none;
+    color: #757575;
+  }
+  
+  .cont_form_sign_up > h2 {
+    margin-top: 50px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .cont_form_login > input {
+    padding: 15px 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 260px;
+    border: none;
+    text-align: left;
+    color: #757575;
+  }
+  
+  .cont_form_login > h2 {
+    margin-top: 110px;
+    font-weight: 400;
+    color: white;
+  }
+  .cont_form_login > a,
+  .cont_form_sign_up > a {
+    color: #ffffff;
+    position: relative;
+    float: left;
+    margin: 10px;
+    margin-left: 30px;
+  }
+  
+  /* ----------------------------------
+    Formulario    
+  ------------------------------------
+   */
+
+   :root{
+    --succes-color: #2ecc71;;
+    --error-color: #ff9b90;
+    font-family: 'Palanquin', sans-serif;
+    }
+
+    .form{
+        margin-right: 3%;
+        padding: 30px;
+    }
+    
+    .form-control{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    .form-control label{
+        color:#777;
+        display: block;
+        margin-bottom: 5px; 
+    }
+     
+    .form-control input
+    {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;   
+    }
+    
+    .form-control input:focus{
+        outline: 0;
+        border-color: #777;
+    
+    }
+    
+    .form-control.success input {
+        border-color: var(--succes-color);
+    }
+    
+    .form-control.error input {
+        border-color: var(--error-color);    
+    }
+    
+    .form-control small{
+        color: var(--error-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    .form-control.error small{
+        visibility: visible;
+    }
+  
+
+/*CSS LOGIN*/

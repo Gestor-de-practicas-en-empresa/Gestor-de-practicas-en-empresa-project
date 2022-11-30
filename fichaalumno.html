@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/alumno.css">
+    <title>Cuenta | Alumno</title>
+</head>
+<style>
+    h1{
+    margin-left:2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2em;
+    }
+    .conteiner{
+        background: #fff;
+        padding: 20px 30px;
+        margin: 0 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 42px;
+        grid-row-gap: 0px;
+        }
+
+        .div1 { grid-area: 1 / 1 / 2 / 2;}
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+        .div2{
+            text-align: right;
+        }
+
+</style>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-chalkboard'></i>
+            <span class="logo_name"> Área Alumnos</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="indexalumno.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Panel de control</span>
+                </a>
+            </li>
+            <li>
+                <a href="seguimientoalumno.html">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Seguimiento</span>
+                </a>
+            </li>
+            <li>
+                <a href="fichaalumno.html" class="active">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Cuenta</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Cerrar sesión</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Información del alumno</span>
+            </div>
+            <div class="profile-details">
+                <span class="admin_name">¡ HOLA nombre del alumno !</span>
+            </div>
+        </nav>
+
+        <div class="home-content">        
+            <div class="conteiner">
+                <div class="top-sales">
+                    <div class="parent">
+                        <div class="div1">
+                            <h1>Datos de la cuenta</h1>
+                            <br>
+                            <ul class="top-sales-details" style="list-style: none;">
+                                <li>
+                                    <span class="product"><b>Nombre:</b></span>
+                                    <span class="price">Paul</span>
+                                </li>
+                                <li>
+                                    <span class="product"><b>Apellidos:</b></span>
+                                    <span class="price">Martinez Guerrero</span>
+                                </li>
+
+                                <li>
+                                    <span class="product"><b>DNI:</b></span>
+                                    <span class="price">66406345Q</span>
+                                </li>
+
+                                <li>
+                                    <span class="product"><b>Fecha de nacimiento:</b></span>
+                                    <span class="price">6/7/2002</span>
+                                </li>
+
+                                <li>
+                                    <span class="product"><b>Email:</b></span>
+                                    <span class="price">Paul.s248953@cesurformacion.com</span>
+                                </li>
+
+                                <li>
+                                    <span class="product"><b>Teléfono de contacto:</b></span>
+                                    <span class="price">602 23 24 56</span>
+                                </li>
+        
+                                <li>
+                                    <span class="product"><b>Empresa:</b></span>
+                                    <span class="price">Accenture</span>
+                                </li>
+                                <li>
+                                    <span class="product"><b>Profesor tutor:</b></span>
+                                    <span class="price">Aaron Blanco</span>
+                                </li>
+                                <li>
+                                    <span class="product"><b>Nº de horas totales para realizar en DUAL:</b></span>
+                                    <span class="price">982h</span>
+                                </li>
+                                <li>
+                                    <span class="product"><b>Nº de horas totales para realizar en FCT:</b></span>
+                                    <span class="price">382h</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div2"> 
+                        <img src="img/logo invertido.png" >
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

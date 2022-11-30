@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/alumno.css">
+    <title>Crear ficha seguimiento | Alumno</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-chalkboard'></i>
+            <span class="logo_name">Área Alumnos</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="indexalumno.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Panel de control</span>
+                </a>
+            </li>
+            <li>
+                <a href="seguimientoalumno.html" class="active">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Seguimiento</span>
+                </a>
+            </li>
+            <li>
+                <a href="fichaalumno.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Cuenta</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Cerrar sesión</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Crear ficha de seguimiento</span>
+            </div>
+            <div class="profile-details">
+                <span class="admin_name">¡ HOLA nombre del alumno !</span>
+            </div>
+        </nav>
+
+        <div class="home-content">        
+            <div id="caja">   
+                <form action="#" class="form">
+                    <div class="form-group">
+                      <label for="name">Fecha *</label>
+                      <input type="text" class="form-input" id="fecha" placeholder="DD/MM/AAAA" minlength="10" required aria-label="Utiliza el formato DD/MM/AAAA" title="Formato DD/MM/AAAA" pattern="^(0?[1-9]|[12]\d|3[01])[\/](0?[1-9]|1[0-2])[\/](19|20)\d{2}$">
+                    </div>
+                    <div class="form-group">
+                      <label for="tipoPracticas">Tipo de Prácticas *</label>
+                      <input type="text" class="form-input" id="tipoPracticas" placeholder="Dual o FCT" pattern="[A-Za-z]+"  required >
+                    </div>
+                    <div class="form-group">
+                        <label for="horasRealizadas">Horas realizadas *</label>
+                        <input type="number" class="form-input" id="horasRealizadas" placeholder="Número de horas realizadas" min="0" max="10" required>
+                      </div>
+                    <div class="form-group">
+                      <label for="Actividad">Actividad Realizada *</label>
+                      <input type="text" class="form-input" id="Actividad" placeholder="Actividad Realizada" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="comment">Observaciones *</label>
+                      <textarea class="form-input form-input--textarea" id="comment" rows="3" placeholder="Deja tu comentario" required></textarea>
+                    </div>
+                    <div class="form-group form-group--submit">
+                      <button class="form-button" type="submit">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
