@@ -10,6 +10,7 @@ let editando=false; //cuando tiene q agregar y cuando tiene q actualizar la info
 const formulario=document.querySelector('#formulario');
 const nombreImput=document.querySelector('#nombre');
 const apellidoImput=document.querySelector('#apellido');
+const idImput=document.querySelector('#dni');
 const btnAgregar=document.querySelector('#btnAgregar');
 
 formulario.addEventListener('submit',validarFormulario); 
@@ -17,7 +18,7 @@ formulario.addEventListener('submit',validarFormulario);
 function validarFormulario(e){ // 
     e.preventDefault(); // para q no se ejecute de forma automatica
 
-    if(nombreImput.value== '' || apellidoImput.value== ''){
+    if(nombreImput.value== '' || apellidoImput.value== '' || idImput.value==''){
         alert('todos los campos son obligatorios');
         return;
     }
@@ -28,6 +29,7 @@ function validarFormulario(e){ //
     }else{
         objAlumno.id=Date.now(); //tiempo en milisegundos
         objAlumno.nombre=nombreImput.value;
+        objAlumno.id=idImput.value;
         objAlumno.apellido=apellidoImput.value;
 
         agregarAlumno();
@@ -120,4 +122,3 @@ function limpiarHTML(){
         divAlumnos.removeChild(divAlumnos.firstChild); // mientras el contenedor tenga hijos los va a ir eliminando de 1 en 1 
     }
 }
-
